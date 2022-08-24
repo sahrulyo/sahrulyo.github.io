@@ -1,0 +1,524 @@
+/* ini adalah reset & setting awal */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-padding-top: 2rem;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  list-style: none;
+}
+
+:root {
+  --main-color: rgb(6, 73, 6);
+  --second-color: white;
+}
+
+section {
+  padding: 50px 10%;
+}
+*::selection {
+  color: antiquewhite;
+  background-color: #017550;
+}
+
+img {
+  width: 100%;
+}
+img {
+  width: 40px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: aliceblue;
+  padding: 15px 10%;
+  transition: 0, 2s;
+  width: 100%;
+}
+img {
+  display: flex;
+  align-items: center;
+}
+.navbar {
+  display: flex;
+}
+.navbar a {
+  font-size: 16px;
+  padding: 11px 20px;
+  color: #017550;
+  font-weight: 400;
+}
+.navbar a:hover {
+  color: rgb(14, 226, 25);
+  transition: 0, 9s;
+  background-color: none;
+  padding: 2px;
+}
+
+#menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 1001;
+  display: none;
+}
+
+button {
+  border: none;
+  background: #017550;
+  padding: 12px 30px;
+  border-radius: 20px;
+  color: aliceblue;
+  font-size: 13px;
+}
+/* warna hero image/background */
+.home {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #eecd97;
+  gap: 1rem;
+}
+
+.home-text {
+  flex: 1 1 17rem;
+}
+
+.home img {
+  flex: 1 1 17rem;
+  width: 400px;
+}
+
+/* animation dipending */
+.home-img img {
+  animation: animate 3s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: translate (-15px, 0);
+  }
+
+  50% {
+    transform: translate(-0px, -15);
+  }
+  100% {
+    transform: translate(-15px, 0);
+  }
+}
+/* animation dipending */
+
+.home-text span {
+  color: rgb(224, 24, 144);
+
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 600;
+  font-family: "Gloria Hallelujah", Schoolbell, cursive;
+}
+
+body {
+  background-color: #017550;
+  height: 2000px;
+}
+.home-text h3 {
+  color: #017550;
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+.home-text h1 {
+  color: #017550;
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.home-text p {
+  font-size: 14px;
+  margin: 0, 5rem 0 1.4rem;
+}
+
+.btn {
+  border: none;
+  background: #017550;
+  padding: 12px 30px;
+  border-radius: 20px;
+  color: aliceblue;
+  font-size: 13px;
+}
+/* custome button */
+
+.home-text {
+  margin-top: 70px;
+}
+
+/* Ini adalah main Body----promo item seasonal--judul */
+.heading {
+  text-align: center;
+}
+.heading span {
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(247, 214, 144);
+}
+.heading h1 .penutup {
+  font-size: 2rem;
+  color: aliceblue;
+  font-family: Gloria Hallelujah;
+  font-size: 35px;
+  line-height: 70px;
+  height: 100%;
+  border-radius: 10px;
+
+  background-image: url(asset/4.jpg);
+  background-position-x: center;
+  background-repeat: repeat-x;
+
+  padding: 60px;
+}
+
+.heading h1 {
+  font-size: 2rem;
+  color: bisque;
+}
+/* box kontainer */
+
+.shop-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 5rem;
+}
+
+.shop-container .box {
+  flex: 1 1 10rem;
+  background-color: aliceblue;
+  padding: 20px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  border-radius: 10px;
+}
+
+/* ----------------------nambah animasi------------ */
+.shop-container .box .box-img {
+  width: 150px;
+  height: 250px;
+  margin-top: -70px;
+  animation: animate 3s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: translate (-11px, 0);
+  }
+
+  50% {
+    transform: translate(-0px, -11);
+  }
+  100% {
+    transform: translate(-11px, 0);
+  }
+}
+/* ----------------------nambah animasi------------ */
+.shop-container .box .box-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.stars {
+  margin: 1rem 0 0.1rem;
+}
+.shop-container .box .stars .bx {
+  color: #017550;
+}
+.shop-container .box h2 {
+  color: #017550;
+  font-size: 1.2rem;
+}
+.shop-container .box span {
+  color: #017550;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 0.2rem 0 0.5rem;
+}
+/* warna body disni ----ganti warna */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  background-color: #e6bb77;
+  padding: 30px;
+  border-radius: 1px;
+}
+
+.delivery-img img {
+  flex: 1 1 21rem;
+  width: 370px;
+}
+
+.delivery-text {
+  flex: 1 1 21rem;
+  background-color: none;
+}
+.delivery-text h2 {
+  font-size: 1.2rem;
+  color: #000;
+}
+
+/* warna text body */
+.delivery-text p {
+  text-align: justify;
+  color: #42210b;
+  margin: 0.5rem 0 1rem;
+}
+.delivery .container .form {
+  padding: 20px;
+  height: 20px;
+}
+
+.wrapper {
+  position: relative;
+
+  max-width: 430px;
+  width: 100%;
+  background: none;
+  padding: 34px;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.wrapper h2 {
+  position: relative;
+  font-size: 22px;
+  font-weight: 600;
+  color: none;
+}
+.wrapper h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 28px;
+  border-radius: 12px;
+  background: #017550;
+}
+.wrapper form {
+  margin-top: 30px;
+}
+.wrapper form .input-box {
+  height: 52px;
+  margin: 18px 0;
+}
+form .input-box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding: 0 15px;
+  font-size: 15px;
+  font-weight: 400;
+  color: none;
+  border: 1.5px solid azure;
+  border-bottom-width: 2.5px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+.input-box input:focus,
+.input-box input:valid {
+  border-color: none;
+}
+form .policy {
+  display: flex;
+  align-items: center;
+}
+form h3 {
+  color: #017550;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+.input-box.button input {
+  color: aliceblue;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  background: #017550;
+  cursor: pointer;
+  border: none;
+}
+.input-box.button input:hover {
+  background: #05d895;
+}
+form .text h3 {
+  color: #017550;
+  width: 100%;
+  text-align: center;
+}
+form .text h3 a {
+  color: none;
+  text-decoration: none;
+}
+form .text h3 a:hover {
+  text-decoration: underline;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social a {
+  font-size: 16px;
+
+  color: antiquewhite;
+  margin: 0.5rem;
+}
+
+.social a .bx {
+  padding: 5px;
+  width: 27px;
+  background-color: rgb(241, 75, 102);
+  border-radius: 50%;
+  margin-left: 45%;
+  margin-top: 10px;
+}
+.social a .bx:hover {
+  background: yellowgreen;
+}
+.links {
+  margin: 1rem 0 1rem;
+}
+.links a {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 1rem;
+}
+.contact p {
+  text-align: center;
+}
+/* responsive navbar */
+
+.footer {
+  padding: 25px;
+  font-size: 13px;
+  text-align: center;
+  font-weight: 400;
+  color: #017550;
+  letter-spacing: 0, 5px;
+  background-color: #f3ede2;
+}
+
+@media (max-width: 1150px) {
+  header {
+    padding: 18px 7%;
+  }
+  section {
+    padding: 50px 7%;
+  }
+  .home-text h1 {
+    font-size: 3rem;
+  }
+  .home-text h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 991px) {
+  header {
+    padding: 18px 4%;
+  }
+  section {
+    padding: 50px 4%;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 11px 4%;
+  }
+  /* muncul humberger menu */
+  #menu-icon {
+    display: initial;
+  }
+  header .navbar {
+    position: absolute;
+    top: -300px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background: azure;
+    box-shadow: none;
+    opacity: 95%;
+
+    border-top: 2px solid 017550;
+    transition: 0.2s;
+    text-align: left;
+  }
+  button {
+    display: none;
+  }
+  .navbar .active {
+    top: 100%;
+  }
+  .navbar a {
+    padding: 1.5rem;
+    display: block;
+    color: #017550;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-text {
+    padding-top: inherit;
+  }
+  .shop-container .box {
+    margin-top: 6rem;
+  }
+  .heading h1 {
+    font-size: 1.5rem;
+  }
+  .heading span {
+    font-size: 0.9rem;
+  }
+  .about {
+    flex-direction: column-reverse;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .social a .bx {
+    margin-left: 10px;
+  }
+  .wrapper {
+    margin: auto;
+  }
+  .footer {
+    font-size: 17px;
+  }
+}
+@media (max-width: 991px) {
+  .wrapper {
+    margin: auto;
+  }
+  .home-text span {
+    font-size: 45px;
+  }
+}
+
+hr {
+  margin: auto;
+}
