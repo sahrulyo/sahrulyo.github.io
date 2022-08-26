@@ -40,7 +40,7 @@ header {
   justify-content: space-between;
   background-color: aliceblue;
   padding: 15px 10%;
-  transition: 0, 2s;
+  transition: none;
   width: 100%;
 }
 img {
@@ -58,7 +58,7 @@ img {
 }
 .navbar a:hover {
   color: rgb(14, 226, 25);
-  transition: 0, 9s;
+  transition: none;
   background-color: none;
   padding: 1px;
 }
