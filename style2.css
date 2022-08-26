@@ -554,7 +554,7 @@ form .text h3 a:hover {
   button {
     display: none;
   }
-  .navbar .active {
+  .navbar.active {
     top: 100%;
   }
   .navbar a {
