@@ -126,7 +126,6 @@ button {
 
 body {
   background-color: #017550;
-  height: 2000px;
 }
 .home-text h3 {
   color: #017550;
@@ -588,7 +587,7 @@ form .text h3 a:hover {
     margin: auto;
   }
   .footer {
-    font-size: 17px;
+    font-size: 13px;
   }
 }
 @media (max-width: 991px) {
