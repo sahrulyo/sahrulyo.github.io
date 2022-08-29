@@ -535,15 +535,15 @@ form .text h3 a:hover {
   }
   header .navbar {
     position: absolute;
-    top: -300px;
+    top: -700px;
     left: 0;
     right: 0;
     display: flex;
     flex-direction: column;
     background: azure;
     box-shadow: none;
-    opacity: 95%;
-    border-top: 2px solid #017550;
+    opacity: 90%;
+
     transition: 0.2s;
     text-align: left;
   }
