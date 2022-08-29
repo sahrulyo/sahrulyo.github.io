@@ -40,7 +40,7 @@ header {
   justify-content: space-between;
   background-color: aliceblue;
   padding: 15px 10%;
-  transition: none;
+  transition: 0, 2s;
   width: 100%;
 }
 img {
@@ -58,9 +58,8 @@ img {
 }
 .navbar a:hover {
   color: rgb(14, 226, 25);
-  transition: none;
+  transition: 0, 9s;
   background-color: none;
-  padding: 1px;
 }
 
 #menu-icon {
@@ -104,7 +103,7 @@ button {
 }
 @keyframes animate {
   0% {
-    transform: translate (-15px, 0);
+    transform: translate(-15px, 0);
   }
 
   50% {
@@ -220,7 +219,87 @@ body {
 }
 
 /* payment gatway disini */
+.payment {
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 10px 50px;
+  display: none;
+  flex-direction: column;
+  -webkit-box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+}
+.payTitle {
+  font-size: 20px;
+  color: lightgray;
+}
 
+label {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.payInput {
+  padding: 10px;
+  margin: 10px 0px;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+.payInput::placeholder {
+  color: rgb(163, 163, 163);
+}
+
+.cardIcons {
+  display: flex;
+}
+
+.cardIcon {
+  margin-right: 10px;
+}
+
+.cardInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sm {
+  width: 30%;
+}
+
+.payButton {
+  position: absolute;
+  height: 40px;
+  bottom: -40;
+  width: 100%;
+  left: 0;
+  -webkit-box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+  background-color: #369e62;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.close {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: gray;
+  color: white;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 2px;
+}
 /* end payment gatway css disini */
 @keyframes animate {
   0% {
@@ -385,9 +464,8 @@ form .text h3 a:hover {
 
 .social a {
   font-size: 16px;
-
   color: antiquewhite;
-  margin: 0.5rem;
+  padding: 1rem;
 }
 
 .social a .bx {
@@ -395,8 +473,6 @@ form .text h3 a:hover {
   width: 27px;
   background-color: rgb(241, 75, 102);
   border-radius: 50%;
-  margin-left: 45%;
-  margin-top: 10px;
 }
 .social a .bx:hover {
   background: yellowgreen;
@@ -405,6 +481,7 @@ form .text h3 a:hover {
   margin: 1rem 0 1rem;
 }
 .links a {
+  color: antiquewhite;
   font-size: 1rem;
   font-weight: 500;
   padding: 1rem;
@@ -466,8 +543,7 @@ form .text h3 a:hover {
     background: azure;
     box-shadow: none;
     opacity: 95%;
-
-    border-top: 2px solid 017550;
+    border-top: 2px solid #017550;
     transition: 0.2s;
     text-align: left;
   }
